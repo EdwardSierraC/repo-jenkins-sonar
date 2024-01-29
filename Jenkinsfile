@@ -35,7 +35,7 @@ pipeline {
                script {
                         scannerHome = tool 'SonarQubeScanner'//mismo nombre del servidor configurado en las Global Tools Jenkins
                }
-               withSonarQubeEnv('sonarQube')//mismo nombre del servidor configurado en la configuracion del sistema jenkins
+               withSonarQubeEnv('MySonaQube')//mismo nombre del servidor configurado en la configuracion del sistema jenkins
                {
                   bat 'sonar-scanner'
                }
